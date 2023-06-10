@@ -1,0 +1,7 @@
+go 1.19
+
+use ./src/start-redrive
+
+use ./src/check-redrive-status
+
+use ./src/processor
