@@ -67,3 +67,9 @@ aws sqs send-message --queue-url https://sqs.<region>.amazonaws.com/<account-id>
 ```bash
 aws stepfunctions start-execution --state-machine-arn arn:aws:states:<region>:<account>:stateMachine:SqsRedriveWorkflow --input "{\"queueArn\": \"arn:aws:sqs:<region>:<account>:sample-dlq\"}"
 ```
+
+### Tearing Down
+
+```bash
+cdk destroy
+```
